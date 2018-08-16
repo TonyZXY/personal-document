@@ -1,0 +1,264 @@
+pacman -Syu
+
+Update System
+sudo pacman -Syu
+
+Change mirror location 
+sudo pacman-mirrors -c Australia
+
+wgwt
+wget
+curl
+
+sudo nano /etc/pacman.conf
+
+sudo pacman -Syu
+
+Download Dropbox CLI verison
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+
+
+~/.dropbox-dist/dropboxd
+~/.dropbox-dist/dropboxd
+echo fs.inotify.max_user_watches=100000 | sudo tee -a /etc/sysctl.conf; sudo sysctl -p
+~/.dropbox-dist/dropboxd
+
+Install Jetbrains Toolbox
+tar -xf jetbrains-toolbox-1.9.3935.tar.gz 
+chmod -R 777 jetbrains-toolbox-1.9.3935
+cd jetbrains-toolbox-1.9.3935
+sudo ./jetbrains-toolbox
+
+
+Install VS Code
+yaourt -S visual-studio-code
+mkdir /tmp/vscode; cd /tmp/vscode/
+wget https://az764295.vo.msecnd.net/public/0.3.0/VSCode-linux-x64.zip
+unzip /tmp/vscode/VSCode-linux-x64.zip -d /opt/
+sudo unzip /tmp/vscode/VSCode-linux-x64.zip -d /opt/
+sudo chmod +x /opt/VSCode-linux-x64/Code
+ln -s /opt/VSCode-linux-x64/Code /usr/local/bin/code
+sudo ln -s /opt/VSCode-linux-x64/Code /usr/local/bin/code
+code .
+
+
+Install Google Chrome
+yaourt -S google-chrome
+
+
+Install Mongodb
+sudo pacman -Sy mongodb
+
+Install postgresql
+sudo pacman -S postgresql
+
+Install JDK 8
+sudo pacman -S jdk8-openjdk
+
+Install NVM
+sudo pacaur -S nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+command -v nvm
+
+
+Install Dropbox GUI
+git clone https://aur.archlinux.org/dropbox.git
+cd dropbox/
+makepkg -s
+sudo pacman -U dropbox-52.4.60-1-x86_64.pkg.tar.xz 
+
+rm -rf Dropbox/
+
+
+
+Install nodejs using NVM
+source /usr/share/nvm/init-nvm.sh
+nvm list remote
+nvm remote
+nvm install 8
+npm
+
+
+Install Tmux
+sudo pacman -S tmux
+
+Install zsh
+sudo pacman -S zsh
+
+Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+Install Vim
+sudo pacman -S vim
+
+Install zsh plugins
+vim .zshrc
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions\
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions\
+vim .zshrc
+source .zshrc
+
+Install PowerTheme
+sudo pacman -S zsh-theme-powerlevel9k\
+echo 'source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme' >> ~/.zshrc\
+vim .zshrc
+source .zshrc
+
+Install Powerline font
+git clone https://github.com/powerline/fonts.git\
+sh fonts/install.sh\
+source .zshrc
+
+
+Install powerline themes
+vim .zshrc
+source .zshrc
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k\
+source .zshrc
+wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf\
+wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf\
+mv PowerlineSymbols.otf ~/.local/share/fonts/\
+fc-cache -vf ~/.local/share/fonts/\
+mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/\
+
+Install Python and powerline status
+sudo pacman -S python
+pip install --user powerline-status\
+vim .zshrc
+source .zshrc
+git clone https://github.com/powerline/fonts.git
+sh fonts/install.sh
+source .zshrc
+
+
+Fix watch list for dropbox
+echo fs.inotify.max_user_watches=100000 | sudo tee -a /etc/sysctl.conf; sudo sysctl -p
+
+
+echo 'source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme' >> ~/.zshrc\
+
+
+Install nerd font
+source .zshrc
+vim .zshrc
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+rm -rf /home/tonyzheng/.oh-my-zsh/custom/themes/powerlevel9k
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+vim .zshrc
+source .zshrc
+git clone https://github.com/ryanoasis/nerd-fonts.git
+sudo pacman -S nerd-fonts-source-code-pro
+git clone git clone https://aur.archlinux.org/nerd-fonts-source-code-pro.git
+git clone https://aur.archlinux.org/nerd-fonts-source-code-pro.git
+cd nerd-fonts-source-code-pro
+./nerd-fonts-source-code-pro.install
+chmod +x nerd-fonts-source-code-pro.install
+./nerd-fonts-source-code-pro.install
+cat nerd-fonts-source-code-pro.install
+rm -rf nerd-fonts-source-code-pro
+mkdir -p ~/.local/share/fonts
+
+
+Update NVM
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash\
+
+
+
+npm install -g modemon
+
+
+
+sudo systemctl start mongod
+sudo systemctl start mongo
+
+Install mongodb
+tar -xf mongodb-3.6.5-1-x86_64.pkg.tar.xz
+
+git config --global credential.helper 'store --file ~/.my-credentials'
+
+
+
+npm install 
+npm install -g @angular/cli
+
+sudo systemctl restart postgresql.service
+sudo systemctl restart postgresql.service
+
+npm install -g forever
+
+Fix dropbox watch 
+echo 100000 | sudo tee /proc/sys/fs/inotify/max_user_watches
+
+
+Install openssh
+sudo pacman -S openssh
+sudo pacman -S openssh-server
+sudo pacman -S openssh-client
+cd .config
+cd systemd
+
+rm -rf systemd
+mkdir -p ~/.config/systemd/user/
+vim ~/.config/systemd/user/ssh-agent.service
+sudo rm .pam_environment
+
+
+ps -aux | grep 'ssh'
+systemctl --user start ssh-agent.service
+ps -aux | grep 'ssh'
+ssh-add -k
+systemctl --user status ssh-agent.service
+ssh-add -k
+systemctl --user status ssh-agent.service
+cd Documents
+ssh-add -k BGLNewsApp_bkend_bastion00.pem BGLNewsApp_bkend_service_server00.pem
+ssh -A bglnewsbastion00@54.206.117.217 -p 10332
+
+
+Install PM2
+sudo npm install -g pm2
+
+
+Install Redis
+sudo pacman -S redis
+vim redis.conf
+systemctl status redis.service
+systemctl start redis.service
+systemctl status redis.service
+
+
+Update oh my zsh
+upgrade_oh_my_zsh
+
+
+Install pacman
+pacman -S htop
+
+Install htop
+sudo pacman -S htop
+
+Update System
+sudo pacman -Syu
+
+
+
+Update NVM
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
+
+
+Add swap file
+sudo swapon -s
+sudo fallocate -l 4096M /swap
+ls -lh /swap
+free -m
+chmod 600 /swap
+sudo chmod 600 /swap
+sudo mkswap /swap
+sudo swapon /swap
+sudo swapon -s
+
+
+Install julia
+sudo pacman -S julia
+
