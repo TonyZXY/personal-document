@@ -1,0 +1,51 @@
+1 Install Xcode & Xcode Command-Line-Tools
+    
+2 Install Homebrew
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+3 Install Git
+    brew install git
+
+4 Install Chrome
+    brew cask install google-chrome
+
+5 Install VS Code
+
+6 Install iTerm2 
+    brew cask install iterm2
+
+7 Install tmux
+    brew install tmux
+
+8 Install Oh-My-Zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  Install zsh-completions
+  Install zsh-autosuggestions
+  Install zsh-syntax-highlighting
+
+9 Install Powerlevel9K
+    git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+
+10 Install nvm
+    brew install nvm
+
+11 Install Node.js
+    nvm
+
+12 Install Angular
+
+13 Install JetBrains
+
+14 Install Vim
+
+
+
+
+
+
+
+
+
+
+
