@@ -10,6 +10,7 @@
     brew cask install google-chrome
 
 5 Install VS Code
+    brew cask install visual-studio-code
 
 6 Install iTerm2 
     brew cask install iterm2
@@ -31,9 +32,11 @@
     brew install nvm
 
 11 Install Node.js
-    nvm
+    nvm install node
+    nvm install --lts
 
 12 Install Angular
+    npm install -g @angular/cli
 
 13 Install JetBrains
 
